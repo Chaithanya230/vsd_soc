@@ -1,1 +1,1 @@
-# vsd_soc
+# Digial_Vlsi_SoC
