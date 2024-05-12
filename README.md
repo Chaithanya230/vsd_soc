@@ -198,7 +198,7 @@ So after placing the Decaps between the blocks the chip looks something like thi
 <h3>Floor Planning</h3>
 
 Power planning is to ensure that every component on the chip receives stable and clean power without any voltage drop.
-The layout uses a grid of power (Vdd) and ground (Vss) lines(horizontal and vertical) that intersect across the chip to provide every component with access to power. This setup minimizes voltage drops and power losses. 
+The layout uses a grid of power (Vdd) and ground (Vss) lines(horizontal and vertical) that intersect across the chip to provide every component with access to power. This setup minimizes voltage drops and power losses. IP blocks and logic circuits are strategically located within this grid to optimize power delivery and minimize latency in power access.
 
 ![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/4cf16db6-3ce8-49ef-82aa-b09f29f52855)
 
