@@ -126,6 +126,7 @@ The result of the sysnthesis is given my a objective to find the flop ratio
 
 Flop ratio =(no. of D_ff)/(total no of cells)
 So, flop ratio= 1613/14876 = 0.108 = 10.8%
+
 ![no of d ff](https://github.com/Chaithanya230/vsd_soc/assets/169294654/9f6c27be-c8f8-4102-9fe8-589e50b25299)
 
 ![no of cells](https://github.com/Chaithanya230/vsd_soc/assets/169294654/4214a09e-c024-4981-a924-53151ad5cf11)
