@@ -88,6 +88,13 @@ OPENLANE is an automated RTL to GDSII flow which comprises of many open source E
 
 ![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/61d59da4-9455-4955-9faa-864a36c5bfe3)
 
+Modes of operation 
+#### 
+1. **Autonomous:** Complete execution (Push Button flow)
+
+2. **Interactive:** Step by step execution
+
+   
 <h3>Get familiar to open-source EDA tools</h3>
 <h3>OpenLANE Directory structure in detail</h3>
 
