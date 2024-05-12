@@ -80,6 +80,65 @@ The basic operation here is that application software moves into system software
 
 7. **Sign Off:** Verification and validation of the design. Timing analysis, power analysis, and design rule checks. Once everything meets specifications, the design is ready for manufacturing.
 
+<h3>Introduction to OpenLANE and Strive chipsets</h3>
+
+OPENLANE is an automated RTL to GDSII flow which comprises of many open source EDA tools such as OpenROAD, Yosys, Magic, Netgen, Fault, CVC SPEF-Extractor, CU-GR, Klayout,etc. The was started as an Open-source tape-out experiment using an Open-source flow. Open PDK, Open EDA, and Open RTL are among the Open Everything SoCs in the striVe family. The main goal of Openlane is to cut-off human intervations between RTL to GDSII with no DRC, LVS and timing violatons.
+
+<h3>Introduction to OpenLANE detailed ASIC design flow</h3>
+
+![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/61d59da4-9455-4955-9faa-864a36c5bfe3)
+
+<h3>Get familiar to open-source EDA tools</h3>
+<h3>OpenLANE Directory structure in detail</h3>
+
+#### Few Linux Commands
+
+**cd:** change directory.
+
+**ls:** Used for listing different contents in the directory.
+
+**ls -ltr:** Used for lisiting files in chronological order.
+
+**command --help:** It gives information about all the switches what does they mean.
+
+**clear:** Used to clear the screen.
+
+In this workshop we are working in Sky130_fd_sc_hd PDK varient where, *sky130* is process name, *fd* is a foundary name, *sc* means standerd cell librery, *hd* means high density( type of varient).
+
+![day1 part1](https://github.com/Chaithanya230/vsd_soc/assets/169294654/db9abe79-e65d-4024-9223-be1a9a7ae605)
+
+<h3>Design Preparation Step</h3>
+
+The terminal window is opened and we are currently in Openlane directory after this we choose flow.tcl and be in interactive mode.
+flow.tcl tells how the flow has to go using the script and -interactive ensures that it undergoes step by step process. Later install the required packages.
+
+![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/dc195871-0a7a-4e28-b47b-e3510d53ebfa)
+
+![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/b7b53c03-c844-454f-abe4-b901019076c2)
+
+Now before synthesis we need to perpare a design set up stage which is shown below
+
+![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/a19c28c7-7cc3-4bef-8fdd-8f4a45670d3d)
+
+<h3>Steps to characterize synthesis results</h3>
+
+The result of the sysnthesis is given my a objective to find the flop ratio
+
+Flop ratio =(no. of D_ff)/(total no of cells)
+So, flop ratio= 1613/14876 = 0.108 = 10.8%
+![no of d ff](https://github.com/Chaithanya230/vsd_soc/assets/169294654/9f6c27be-c8f8-4102-9fe8-589e50b25299)
+
+![no of cells](https://github.com/Chaithanya230/vsd_soc/assets/169294654/4214a09e-c024-4981-a924-53151ad5cf11)
+
+
+
+
+
+
+
+
+
+
 
 
 
