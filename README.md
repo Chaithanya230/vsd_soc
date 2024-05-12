@@ -2,9 +2,10 @@
 <h2>Day1-Inception of open-source EDA, OpenLANE and Sky130 PDK</h2>
 <h3>How to talk to computers?</h3>
 <h3>Introduction to QFN-48 Package, chip, pads, core, die and IPs</h3>
-<h4>BOARD DIAGRAM</h4>
+<h4>Arduino Microcontroller Board</h4>
 
 
+![515b4656ce395f8a38000000](https://github.com/Chaithanya230/vsd_soc/assets/169294654/1187983f-1ab5-4411-92f3-9a96c944ee6b)
 
 
 #### Different Chip Components 
