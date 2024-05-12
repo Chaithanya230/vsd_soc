@@ -72,7 +72,7 @@ The basic operation here is that application software moves into system software
 3. **FloorPlanning + Power Planning:** Chip floor planning (Partition of the chip die betwwen different system bulding blocks
     Macros floor planning (Dimensions, pin location and row definition) and power planning ( involves strategic distribution of power and gnd connections to all functional blocks).
 
-4  **Placement:** Place cells (gates) onto the chip’s floorplan.It is done in two steps i) Global ii) Detailed
+4. **Placement:** Place cells (gates) onto the chip’s floorplan.It is done in two steps i) Global ii) Detailed
 
 5. **Clock Tree Synthesis (CTS):** It creates a clock distribution network. Ensure clock signals reach all parts of the chip with minimal skew,delay and power consumption. Insert buffers and inverters for balanced clock paths.
 
