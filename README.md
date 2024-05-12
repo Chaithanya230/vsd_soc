@@ -139,6 +139,83 @@ So, flop ratio= 1613/14876 = 0.108 = 10.8%
 ![no of cells](https://github.com/Chaithanya230/vsd_soc/assets/169294654/4214a09e-c024-4981-a924-53151ad5cf11)
 
 
+<h2>Good floorplan vs bad floorplan and introduction to library cells</h2>
+<h3>Chip Floor planning considerations</h3>
+<h3>Utilization and Aspect ratio</h3>
+Chip dimensions mostly depends on the dimensions of standard cells
+
+#### Dimensioning is first started by defining the width and length of core and die 
+
+**Core:** It is a section of the chip where fundamental logic is placed.
+
+**Die:** It is a small semiconductor material o which fundamental circuit is fabricated.
+
+Now consider the given netlist 
+
+![Day 2 1](https://github.com/Chaithanya230/vsd_soc/assets/169294654/9711cdae-138e-4059-8d5e-e1991eb6e652)
+
+Now for core dimensions consider only standard cell components and ignore wirings initially.
+
+![DAy 2 2](https://github.com/Chaithanya230/vsd_soc/assets/169294654/d1b19493-3703-4e82-9ce9-11418c26ec6c)
+
+Now calculate the dimensions of each standard cells
+
+![Day 2 3](https://github.com/Chaithanya230/vsd_soc/assets/169294654/0bd00ed0-7fda-47d8-badf-8db384aa4f9f)
+
+The Utilization factor is defined as the ratio of area occupied by the netlist to total area of the core.
+
+![Day 2 4](https://github.com/Chaithanya230/vsd_soc/assets/169294654/8e01491a-67d5-4a2d-9697-8466d5270335)
+
+The Aspect ratio is defined as ratio of height to length of the core. It also tells about the shape of the chip (square or rectangle).
+
+![Day 2 5](https://github.com/Chaithanya230/vsd_soc/assets/169294654/25277d89-b351-4820-a028-8c9950b36189)
+
+<h3>Concept of Pre-placed cells</h3>
+Pre-placed cells are cells which are placed only once on the chip after which it cannot be moved in a design cycle. The arrangement of these IP's in a chip is referred to as floor planning and the IP's have user defined location. These typically include IP blocks, memory arrays, and other large functional blocks that have predefined physical dimensions and connectivity requirements. They are implemented once and used multiple times on the chip.
+
+![Day 2 6](https://github.com/Chaithanya230/vsd_soc/assets/169294654/f97c9aa3-649c-43c0-85d0-a1db616bb076)
+
+<h3>Surrounding Pre-placed cells by De-coupling capacitors</h3>
+<h3>De-coupling capacitors</h3>
+
+Consider a logical circuit. Every logic gate has a capacitance which has to charge and discharge as its logic changes from 0 to 1 or 1 to 0. These charges comes from a single power supply. Every gate has a small capacitance which needs some amount of voltage (noise margin - voltage needed to get stable).
+Practically there will be voltage drop as it reaches the capacitors due to the large distance between power supply and the capacitors.
+
+![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/afcf26f6-f5c3-4364-9391-4368cce45f5b)
+
+![day 2 7](https://github.com/Chaithanya230/vsd_soc/assets/169294654/2f817137-f222-485a-859d-8b943a501033)
+
+To solve this problem we use De-coupling capacitors. These are basically huge capacitors completlely fillled with charges. 
+Now the de-coupling capacitors are used near to the circuit such that voltage across the dcap and the Vdd is same.
+Whenever switching activity is found the decap looses it's charge to the ckt,when no swithing activity is there then they replenish their charges.
+
+![day 2 8](https://github.com/Chaithanya230/vsd_soc/assets/169294654/e1064bdd-c364-451f-b280-134d84f1c9e2)
+
+So after placing the Decaps between the blocks the chip looks something like this
+
+![day 2 9](https://github.com/Chaithanya230/vsd_soc/assets/169294654/3942cde5-52a3-4058-9676-6a9c29ecd329)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
