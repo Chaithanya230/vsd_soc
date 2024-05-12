@@ -187,7 +187,7 @@ Practically there will be voltage drop as it reaches the capacitors due to the l
 
 To solve this problem we use De-coupling capacitors. These are basically huge capacitors completlely fillled with charges. 
 Now the de-coupling capacitors are used near to the circuit such that voltage across the dcap and the Vdd is same.
-Whenever switching activity is found the decap looses it's charge to the ckt,when no swithing activity is there then they replenish their charges.
+Whenever switching activity is found the decap looses it's charge to the circuit, when no swithing activity is there then they replenish their charges.
 
 ![day 2 8](https://github.com/Chaithanya230/vsd_soc/assets/169294654/e1064bdd-c364-451f-b280-134d84f1c9e2)
 
