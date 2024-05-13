@@ -202,6 +202,39 @@ The layout uses a grid of power (Vdd) and ground (Vss) lines(horizontal and vert
 
 ![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/4cf16db6-3ce8-49ef-82aa-b09f29f52855)
 
+<h3> Pin placement and logical cell placement blockage</h3>
+
+The connectivity information between the gates is coded using vhdl or verilog of and is called as netlist
+Consider the below designs to be implemented 
+
+![Screenshot 2024-05-13 201528](https://github.com/Chaithanya230/vsd_soc/assets/169294654/6ad15ab0-5000-4ebb-9c31-bc3526db558c)
+
+![Screenshot 2024-05-13 201637](https://github.com/Chaithanya230/vsd_soc/assets/169294654/07481bee-eee1-4932-bb2e-df1b4020ff79)
+
+Complete design is given below
+
+![Screenshot 2024-05-13 201741](https://github.com/Chaithanya230/vsd_soc/assets/169294654/59988a37-d238-42c9-bc96-c98b5dfeb24b)
+
+The area between Core and the die is filled with pin information generally input ports are put on the left and output ports put on the right this need not be true in all the case. Now after placing the input and output ports that is after the pin placement is done we need to make sure that the automated PnR doesn't place any cells in the area between the core and die so the space between the space between Core and die should be blocked which is called logical self placement blockage.
+
+![Screenshot 2024-05-13 202354](https://github.com/Chaithanya230/vsd_soc/assets/169294654/991a0629-f7f3-4120-a33d-b839e4265c53)
+
+<h3>Steps to run floorplan using OpenLANE</h3>
+
+Before runing the floorplanning, we required some switches for the floorplanning which we can get from the configuration from openlane. We can see some important things like utilization factor, aspect ratio,etc which can bw changed according to the requirements. 
+
+![Screenshot 2024-05-13 212526](https://github.com/Chaithanya230/vsd_soc/assets/169294654/ed61d1de-eb41-4ded-b642-b5415523034d)
+
+Now run the floorplan using `run_synthesis`
+
+![Screenshot 2024-05-13 212719](https://github.com/Chaithanya230/vsd_soc/assets/169294654/7f518a54-01ee-4685-bf89-4f6fe1acfc39)
+
+
+
+
+
+
+
 
 
 
