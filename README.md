@@ -118,6 +118,10 @@ In this workshop we are working in Sky130_fd_sc_hd PDK varient where, *sky130* i
 
 The terminal window is opened and we are currently in Openlane directory after this we choose flow.tcl and be in interactive mode.
 flow.tcl tells how the flow has to go using the script and -interactive ensures that it undergoes step by step process. Later install the required packages.
+Design preparation step the clock period is set to 12.
+
+![Screenshot 2024-05-15 092407](https://github.com/Chaithanya230/vsd_soc/assets/169294654/07e3ec95-bfe6-4a19-b3b3-aa0058163c09)
+
 
 ![image](https://github.com/Chaithanya230/vsd_soc/assets/169294654/dc195871-0a7a-4e28-b47b-e3510d53ebfa)
 
@@ -225,9 +229,38 @@ Before runing the floorplanning, we required some switches for the floorplanning
 
 ![Screenshot 2024-05-13 212526](https://github.com/Chaithanya230/vsd_soc/assets/169294654/ed61d1de-eb41-4ded-b642-b5415523034d)
 
-Now run the floorplan using `run_synthesis`
+Now run the floorplan using `run_floorplan`
 
 ![Screenshot 2024-05-13 212719](https://github.com/Chaithanya230/vsd_soc/assets/169294654/7f518a54-01ee-4685-bf89-4f6fe1acfc39)
+
+<h3>Review floorplan files and steps to view floorplan</h3>
+
+Here in this step it shows the user how to floorplan actually looks.
+For that we need to type the command shown in the terminal box shown below
+
+![Screenshot 2024-05-15 100558](https://github.com/Chaithanya230/vsd_soc/assets/169294654/466a87bd-24ce-4f87-8528-2819947f101c)
+After this press enter the floorplan will open in Magic file.
+
+![Screenshot 2024-05-15 100616](https://github.com/Chaithanya230/vsd_soc/assets/169294654/f1bed0b5-93c0-4a46-973c-4a1220c04204)
+
+<h3>Review floorplan layout in Magic</h3>
+
+The image below shows the actual flooplan
+
+![Screenshot 2024-05-15 100939](https://github.com/Chaithanya230/vsd_soc/assets/169294654/af6cc3fa-f0af-43c0-9a63-36196caae267)
+
+The left most pins indicate the input pins and we can see that input output pins are placed equidistant. The Decap cells are arranged at the border of the side rows.
+
+![Screenshot 2024-05-15 101209](https://github.com/Chaithanya230/vsd_soc/assets/169294654/6ae35a79-4cc5-436e-8c21-154510655a06)
+
+The pre-placed cells can be seen at the bottom left corner.
+
+![Screenshot 2024-05-15 101749](https://github.com/Chaithanya230/vsd_soc/assets/169294654/42371826-b3fa-4032-9b8b-21c3c8c488ca)
+
+
+
+
+
 
 
 
